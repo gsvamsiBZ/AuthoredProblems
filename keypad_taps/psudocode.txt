@@ -1,0 +1,40 @@
+Take a map m
+for i from [0,8]:
+    Read key
+    keylen = len(key)
+    for j from [0,keylen-1]:
+        m[key[j]] = j+1
+Read n
+for i from [0,n-1]:
+    Read word
+    k = len(word)
+    ans=0
+    for j from [0,k-1]:
+        ans += m[word[j]]
+    print ans
+Read T;
+for test from [0,T-1]:
+    Read r,c;
+    Read mat;
+    mx = INT_MIN
+    ai = -1
+    aj = -1
+    for i from [0,r-1]:
+        for j from [0,c-1]:
+            val = mat[i][j]
+            if (val<0):
+                continue
+            if (i-1 >= 0):
+                val += mat[i-1][j]
+            if (j-1 >= 0):
+                val += mat[i][j-1]
+            if (i-1 >= 0 && j-1> = 0):
+                val += mat[i-1][j-1]
+            if val > mx:
+                mx = val
+                ai = i
+                aj = j
+    if (ai == -1 && aj == -1):
+        print("-1 -1")
+    else:
+        print(ai+1,aj+1)

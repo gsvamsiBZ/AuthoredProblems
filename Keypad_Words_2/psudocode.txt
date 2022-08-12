@@ -1,0 +1,12 @@
+Take a map keys;
+for i from [0,8]:
+    Read key, values;
+    vlen = len(values);
+    for idx from [0,vlen-1]:
+        keys[ values[idx] ] = string(idx+1, key);
+Read n;
+for i from [0, n-1]:
+    Read word;
+    for( ch : word):
+        print(keys[ch],' ');
+    print();
