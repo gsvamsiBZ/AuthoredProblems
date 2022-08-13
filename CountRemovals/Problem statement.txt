@@ -1,0 +1,13 @@
+Peter was given 2 strings S and T, the target word T can be obtained by selecting some subset of characters from S that can be rearranged to form string T and removing them from S. Help Peter determining the maximum number of times the target word T can be removed from S.
+
+Note: Both strings S and T consist only of lowercase English letters.
+
+
+1<=n<=100
+1<=|S|,|T|<=1000
+Both strings S and T consist only of lowercase English letters.
+
+The first line of input contains a single integer n - the number of testcases
+The next n line contains 2 space seperated strings S and T.
+
+For each testcase print maximum number of removals possible

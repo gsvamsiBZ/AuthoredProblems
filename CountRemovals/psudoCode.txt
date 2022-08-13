@@ -1,0 +1,12 @@
+Read n;
+for i from [0,n-1]:
+    Read s, t;
+    Take 2 maps freq_s, freq_t;
+    for ch in s:
+        freq_s[ch]++;
+    for ch in t:
+        freq_t[ch]++;
+    MaxCounts = INT_MAX;
+    for key in freq_t:
+        MaxCounts = min( MaxCounts, min(freq_s[key], freq_t[key]))
+    print MaxCounts;
