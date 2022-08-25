@@ -1,0 +1,15 @@
+Read T;
+for i from [0,T-1]:
+    Read chessboard
+    king=[-1,-1]
+    queen=[-1,-1]
+    for i from [0,7]:
+        for j from[0,7]:
+            if chessboard[i][j]=="K":
+                king=[i,j]
+            if chessboard[i][j]=="Q":
+                queen=[i,j]
+    if king[0]==queen[0] or king[1]==queen[1] or king[0]+king[1]==queen[0]+queen[1] or king[0]-king[1]==queen[0]-queen[1]:
+        print("Yes")
+    else:
+        print("No")
