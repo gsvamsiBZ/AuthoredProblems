@@ -1,0 +1,11 @@
+Read n;
+vowels={'A','E','I','O','U','['}
+for i from [0,n-1]:
+    minimum_operations=0
+    Read s;
+    for ch in s:
+        operations=INT_MAX
+        for vowel in vowels:
+            operations=min(operations,abs(vowel-ch))
+        minimum_operations+=operations
+    print(minimum_operations)

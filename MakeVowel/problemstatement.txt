@@ -1,0 +1,14 @@
+PROBLEM STATEMENT	
+Given a String S containing only uppercase letters. The task is to make all the characters of the string vowels. In one operation you can select any character and add 1 or subtract 1 from it. For example, if we select a character 'C' and add 1, it becomes 'D', and if we subtract 1, it becomes 'B'. We consider 'A' and 'Z'  to be adjacent to each other i.e if we add 1 to 'Z', it becomes 'A' and if we subtract 1 from 'A', it becomes 'Z'. We can perform this operation on any character any number of times.
+Find the minimum operations to make all the characters of the string vowel.
+
+INPUT FORMAT	
+Line 1:  Integer T - Number of test cases.
+Each of the next T lines contains one string per line.
+
+OUTPUT FORMAT	
+For each test case, print the minimum number of operations required to make all the characters of the string vowel.
+
+CONSTRAINTS	
+1 <= T <= 100
+1 <= len(S) <= 1000
