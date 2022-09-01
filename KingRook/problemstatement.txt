@@ -1,0 +1,14 @@
+PROBLEM STATEMENT	
+You are given an 8×8 chessboard with your enemy king denoted by "K" and your queen denoted by "Q" rest all are empty cells denoted by ".". 
+print Yes if you can attack the king with your queen in the next move else print No. 
+
+INPUT FORMAT	
+First line of input has T - Number of test cases.
+Each testcase contains 8 lines which is the chessboard layout which contains one "K", one "Q", and rest all ".".
+All testcases are separated by an empty line.
+
+OUTPUT FORMAT	
+For each test case, print Yes if you can attack the king with your queen in the next move else print No.
+
+CONSTRAINTS	
+1 <= T <= 100
