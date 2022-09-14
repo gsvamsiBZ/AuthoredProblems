@@ -1,0 +1,7 @@
+Vamsi loves to eat chocolates. There are n boxes of chocolates, the ith box has boxes[i] chocolates. His mom went out and will come back in h hours.
+
+Vamsi can decide his chocolates-per-hour eating speed of k. Each hour, he chooses some box of chocolates and eats k chocolates from that box. If the box has less than k chocolates, he eats all of them instead and will not eat any more chocolates during this hour.
+
+Vamsi likes to eat slowly but still wants to finish eating all the chocolates before his mom returns.
+
+Return the minimum integer k such that he can eat all the chocolates within h hours.
