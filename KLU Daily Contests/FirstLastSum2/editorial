@@ -1,0 +1,58 @@
+In the given problem, you are given a number N and you need to print the sum of its first and last digits.
+Approach
+If you pay attention to the constraints length of the number can be up to 103.
+Let us see a few numbers and their lengths
+
+
+   Number            Length
+      1000                    3
+      105                       6
+      10100  - 1            100
+      101000 - 1          1000
+
+So a number with a length of 1000 can be up to 101000-1 and we can't store this big number in int or long long variable.
+We need to read the number as a string and convert the first digit and last digit to int and add them and print them.
+
+Pseudo Code
+
+num=input()
+n = len(num)
+first = int(num[0])
+last = int(num[n-1])
+
+string num;
+cin >> num;
+int n = num.size();
+int first = num[0]-'0';
+int last = num[n-1]-'0';
+
+String num = sc.next();
+int n = num.length();
+int first = num.charAt(0) -'0';
+int last = num.charAt(n-1) - '0;
+
+
+Read t;
+for i from [0,t-1]:
+    string s;
+    read s;
+    n = s.size();
+    first = s[0] - '0';
+    last = s[n-1] - '0';
+    print(first+last)
+
+ 
+Time Complexity
+
+
+
+Time Complexity   :  O(t)
+
+Space Complexity : O(1)
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+int[] getDig(int n):
+    dig=[];
+    while(n):
+        dig.append(n%10);
+        n = n/10;
+    return dig;
+
+bool isPingPong(dig):
+    dif = abs(dig[0] - dig[1]);
+    int size = dig.size();
+    for i from [0, size-2]:
+        if abs(dig[i] - dig[i+1]) != dif:
+            return False;
+    return True;
+
+Read t;
+for i from [0, t-1]:
+    read n;
+    dig = getDig(n);
+    if(isPingPong(dig)):
+        print("YES");
+    else:
+        print("NO");

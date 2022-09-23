@@ -1,0 +1,17 @@
+Read R and C 
+Run an outer loop from 1 to R, to iterate through rows.
+Run an inner loop from 1 to C, to iterate through columns.
+Inside inner loop print "0" for first and last row or column cells, and for all other cells print space.
+print a new line after inner loop.
+
+Read t;
+for i from [0,t-1]:
+    Read R, C;
+    for i from [1, R]:
+        for j from [1, C]:
+            if (i == 1 or i == R or j == 1 or j == C):
+                print("0")
+            else:
+                print(" ")
+        print("\n")
+    print("\n")

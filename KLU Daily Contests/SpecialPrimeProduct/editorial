@@ -1,0 +1,21 @@
+bool isSpecialPrime(int n):
+    if (n <= 3)
+        return false;
+    i = 2;
+    while (i*i <= n):
+        if (n % i == 0):
+            if (i*i == n):
+                return true;
+            return false;
+        i += 1;
+    return false;
+
+Read T;
+for i from [0,T-1]:
+    Read n;
+    Read arr;
+    prod = 1
+    for ele in arr:
+        if isSpecialPrime(ele):
+            prod = ( (prod % 1000000007) * (i % 1000000007) ) % 1000000007
+    print(p)

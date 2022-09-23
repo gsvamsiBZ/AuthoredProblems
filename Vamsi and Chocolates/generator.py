@@ -8,7 +8,7 @@ def getArray(n):
 t=100
 print(t)
 for _ in range(t):
-    n=10000
+    n=1000
     h=random.randint(n,1000000000)
     print(n,h)
     l=getArray(n)
