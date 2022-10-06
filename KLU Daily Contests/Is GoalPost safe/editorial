@@ -1,0 +1,22 @@
+Read T;
+for i from [0,T-1]:
+    Read n;
+    dx = INT_MAX;
+    dy = INT_MAX;
+    xn = 0;
+    yn = 0;
+    for i from[0,T-1]:
+        Read x, y;
+        current_dx = abs(y);
+        current_dy = abs(x);
+        if (current_dx == dx):
+            xn += 1;
+        else if(current_dx < dx):
+            xn = 1;
+            dx = current_dx;
+        if (current_dy == dy):
+            yn += 1;
+        elif (current_dy < dy):
+            yn = 1;
+            dy = current_dy;
+    print(dx, xn, dy, yn);
